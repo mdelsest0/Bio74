@@ -53,11 +53,11 @@ class BallAndStick(Cell):
             sec.insert('pas')
             for seg in sec:
                 seg.pas.g = 1e-4 # S/cm2
-                seg.pas.e = -70 # mV 
+                seg.pas.e = -60 # mV 
         if self.mode == 'LIF':                        
             self.spkout = h.SpikeOut(self.soma(0.5))
-            h.thresh_SpikeOut = -50	# (mV)
-            h.refrac_SpikeOut = 4 # (ms)
+            h.thresh_SpikeOut = -45	# (mV)
+            h.refrac_SpikeOut = 20 # (ms)
             h.vrefrac_SpikeOut = self.soma.e_pas # (mV) reset potential
             h.grefrac_SpikeOut = 100 # (uS) clamped at reset
            
