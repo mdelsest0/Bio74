@@ -5,9 +5,9 @@ NEURON {
 }
 
 PARAMETER {
-	thresh = 1 (millivolt)
-	refrac = 5 (ms)
-	vrefrac = 0 (millivolt)
+	thresh = -45 (millivolt)
+	refrac = 20 (ms)
+	vrefrac = -60 (millivolt)
 	grefrac = 100 (microsiemens) :clamp to vrefrac
 }
 
